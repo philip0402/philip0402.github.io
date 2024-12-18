@@ -139,16 +139,32 @@
             <div class="mb-4">
               <h3>SurfBuddy</h3>
               <p>
-               Motivation of the project
+               I decided to build this project with my codevelopers because we wanted to create a platform 
+               that would help surfers or aspiring surfers find the best spot to surf with respect to their preferences.
+               It solves the problem where you don't have to look for the best spot to surf. 
+               You can just open the app, input your preferences,and it will rank the best local spot according to your preferences.
+               As a surfer, this encourages me to surf more often and to explore new spots.
               </p>
               <p>
-              Functional requirements/what the project does
+                Our project uses the national weather service API to get the weather data and buoy data for 6 local surf spots.
+                Essentially we are using the data to rank the surf spots according to the user's preferences.
+                The program asks the user for their preferences, and uses the data and an algorithm based on my experience as a surfer
+                to rank the local surf spots. The program allows you to output the current surfspots, data for each surfspot, and to rank the surfspots.
               </p>
               <p>
-              Project design
+                The design centers on a modular, object-oriented structure, where each class has a distinct responsibility. 
+                BuoyData and WeatherStationData serve as immutable data models holding environmental information. 
+                EnvPreferences encapsulates user-specific preferences, while the Evaluator applies these preferences and environmental data to produce a suitability score and evaluation. 
+                SurfSpot acts as a hub that fetches current conditions, applies evaluations, and provides summaries. 
+                Request handles data retrieval from external sources.
+                Together, these components form a maintainable, testable, and scalable system, with Java chosen for its familiarity, mature ecosystem and robust standard libraries.
               </p>
               <p>
-              Implementation
+                I was responsible for designing and implementing both the Evaluator and EnvPreferences classes. 
+                In particular, I focused on translating environmental conditions and user preferences into a meaningful numeric score and evaluation category in the Evaluator, 
+                and on modeling user customization through EnvPreferences.
+                I employed agile principles, breaking the work into small, manageable tasks and iterating on the solution.
+                I also collaborated with my team members to integrate my work with the rest of the project, ensuring a cohesive and functional system.
               </p>
 
 
